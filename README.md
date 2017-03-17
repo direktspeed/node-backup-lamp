@@ -1,4 +1,6 @@
 # node-backup
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/direktspeed/node-backup-lamp.svg)](https://greenkeeper.io/)
 Small backup util that backups
 from /etc:
 - apache2 config
