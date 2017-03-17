@@ -44,7 +44,7 @@ cd directory
 tar xfz *.tar.gz
 mv apache2 /etc
 mv php5 /etc
-mv www /var/www
+mv www /var
 #import the mysql.sql.gz into your mysql server use the same that u used for mysqlCmd but run mysql instead like
 #The database must exist you can create it via phpMyAdmin or the Install
 mysql -u USER -pPASSWORD -h HOST DB < mysql.sql.gz
