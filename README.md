@@ -41,10 +41,14 @@ ls
 get directory
 exit
 cd directory
-tar xfz *.tar.gz
-mv apache2 /etc
-mv php5 /etc
-mv www /var
+for file in *.tar.gz; do tar -zxf $file; done && rm -f *.tar.gz \
+&& mkdir -p /etc/apache2 /etc/php5 /var/www \
+&& rm -rf /etc/apache2 /etc/php5 /var/www \
+&& mv apache2 /etc \
+&& mv php5 /etc \
+&& mv www /var \
+&& systemctl restart apache2
+
 #import the mysql.sql.gz into your mysql server use the same that u used for mysqlCmd but run mysql instead like
 #The database must exist you can create it via phpMyAdmin or the Install
 mysql -u USER -pPASSWORD -h HOST DB < mysql.sql.gz
