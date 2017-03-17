@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+// Look if config EXISTS
+// else create empty and print msg and exit
+
+require(__dirname+'/../index.js')
