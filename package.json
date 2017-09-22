@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ssh2-sftp-client": "^1.0.5",
+    "ssh2-sftp-client": "^2.0.0",
     "tar.gz": "git+https://github.com/alanhoff/node-tar.gz.git"
   }
 }
